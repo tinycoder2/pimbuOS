@@ -1,0 +1,152 @@
+nav{
+    font-family: 'Press Start 2P', cursive;
+}
+body 
+{
+    background-image: url('bwcheckz.png') ;
+    background-repeat: repeat;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+}
+
+section 
+{
+    margin: 50px 50px 0px 50px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+}
+
+#initial
+{
+    margin-top: 148px;
+}
+
+aside
+{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+}
+
+.popup 
+{
+    background-color: #bb99ff;
+    padding: 5px 2px 0px 5px;
+    margin: 0px 25px 50px 25px;
+    border-style: double;
+    border-color: black;
+    border-width: 5px;
+    text-align: left;
+    
+}
+
+.txtbox 
+{
+    background-color: #ffccff;
+    padding: 10px;
+    margin: 5px 5px 5px 0px;
+    border-style: solid;
+    border-color: pink;
+   
+    text-align: center;
+}
+.close {
+    vertical-align: right;
+    
+    color: white;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+}
+.close:focus
+.close:hover {
+    opacity: 1;
+    background: red;
+    color: white;
+}
+.close:active {
+    background: red;
+}
+/* tines of the X */
+.close::before,
+.close::after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 15px;
+    width: 3px;
+    background-color: white;
+}
+.close::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.close::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.sidebar
+{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #4747d1;
+    overflow-x: hidden;
+    padding-top: 100px;
+    transition: 0.5s;
+    
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+    position: absolute;
+    top: 100px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-width: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  .notification {
+    background-color:blue;
+    border-color: #6699ff;
+    border-style: dotted;
+    color: white;
+    text-decoration: none;
+    padding: 15px 26px;
+    position: sticky;
+    display: inline-block;
+    border-radius: 25px;
+  }
+  
+  .notification:hover {
+    background: #6699ff;
+  }
+  
+  .notification .badge {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+  }
