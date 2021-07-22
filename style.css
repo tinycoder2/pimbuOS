@@ -11,14 +11,14 @@ body
 
 section 
 {
-    margin: 50px 50px 0px 50px;
+    margin: 50px 50px 100px 50px;
     font-family: 'Press Start 2P', cursive;
     font-size: 15px;
 }
 
 #initial
 {
-    margin-top: 148px;
+    margin: 50px 50px 0px 50px;
 }
 
 aside
@@ -53,7 +53,9 @@ aside
     vertical-align: right;
     
     color: white;
-    border-radius: 50%;
+    border-style: outset;
+    border-color: grey;
+    border-width: 5px;
     background-color: red;
     position: relative;
     width: 20px;

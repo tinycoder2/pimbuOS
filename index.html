@@ -14,6 +14,7 @@
     
     <!--buttonz-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,16 +30,18 @@
 
     <section id="initial">
     
-    <nav class="navbar fixed-top navbar-dark" style="background-color: black; padding: 17px;">
-        <a class="navbar-brand" href="index.html" >s w a h a a</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <nav class="navbar fixed-bottom navbar-dark" style="background-color: black; padding: 17px;">
+        
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarText">
+            <i class="fa fa-home whiteiconcolor"></i>
         </button>
+
+        <a class="navbar-brand" href="index.html" >s w a h a a</a>
 
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About Myself</a>
+                    <a class="nav-link" href="#about">About Me</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="slides.htm">My Work</a>
@@ -56,11 +59,11 @@
         <div class="col col-10">
 
             <!--initial message-->
-            <div class="popup">
+            <div class="popup" id="popup1">
                 <div class="row">
                     <div class="col col-lg-2">Message(1)</div>
                     <div class="col">
-                        <button class="close" aria-label="Close" style="background: red; "></button> 
+                        <button class="close" aria-label="Close" type="button" onclick="closePopUp('popup1')" style="background: red;"></button> 
                     </div> 
                 </div>
                 <div class="txtbox">
@@ -75,7 +78,6 @@
         <div class="col col-2"> 
 
             <div id="main">
-                <!--<button class="openbtn" onclick="openNav()">☰ Open Sidebar</button>-->
                 <button href="#" class="notification" onclick="openNav()">
                     <span style="font-size: 30px;">&#x2709;</span>
                     <span class="badge">!?!</span>
@@ -84,6 +86,26 @@
 
         </div>
 
+        <!--Side notifz bar-->
+
+        <div class="col col-2">
+
+            <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                    <button class="close" aria-label="Close" style="background: red; "></button>
+                    
+                </a>
+
+                <div class="d-grid gap-2" style="margin-top: 15%;">
+                    <button type="button">See my work</button>
+                    <button type="button">Send me a message</button>
+                    <button type="button">Contact me</button>
+                    <button type="button">Leave this site</button>
+                </div>
+
+            </div>
+
+        </div>
 
     </div>
     </section>
@@ -93,14 +115,14 @@
     <section>
     <div class="row">
     
-    <div class="col col-10">
+    <div class="col">
 
         <!--me-->
-        <div class="popup">
+        <div class="popup" id="popup2">
             <div class="row">
                 <div class="col col-lg-2">me.jpeg</div>
                 <div class="col">
-                    <button class="close" aria-label="Close" style="background: red; "></button> 
+                    <button class="close" aria-label="Close" type="button" onclick="closePopUp('popup2')" style="background: red;"></button> 
                 </div>
                 
             </div>
@@ -112,11 +134,11 @@
         </div>
 
         <!--wot u wan2 do-->
-        <div class="popup">
+        <div class="popup" id="popup3">
             <div class="row">
                 <div class="col col-lg-2">Attention!</div>
                 <div class="col">
-                    <button class="close" aria-label="Close" style="background: red; "></button> 
+                    <button class="close" aria-label="Close" type="button" onclick="closePopUp('popup3')" style="background: red;"></button> 
                 </div>
                 
                 
@@ -134,35 +156,17 @@
 
     </div>
 
-    <!--Side notifz bar-->
-
-    <div class="col col-2">
-
-        <div id="mySidebar" class="sidebar">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-                <button class="close" aria-label="Close" style="background: red; "></button>
-                
-            </a>
-
-            <div class="d-grid gap-2" style="margin-top: 15%;">
-                <button type="button">See my work</button>
-                <button type="button">Send me a message</button>
-                <button type="button">Contact me</button>
-                <button type="button">Leave this site</button>
-            </div>
-
-        </div>
-
-    </div>
+    
 
     </div>    <!--row closer tag-->
 
     <!--initial message-->
-    <div class="popup" id="popupM">
+    <div class="popup" id="popup4">
         <div class="row">
             <div class="col col-lg-2">Message(1)</div>
             <div class="col">
-                <button class="close" aria-label="Close" type="button" onclick="closePopUp()" style="background: red;"></button> 
+
+                <button class="close" aria-label="Close" type="button" onclick="closePopUp('popup4')" style="background: red;"></button> 
             </div> 
         </div>
         <div class="txtbox">

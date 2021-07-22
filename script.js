@@ -17,6 +17,7 @@ $(".navbar").hide();
       1000
     );
   });
+  document.querySelector('#popup').style.display = 'none';
 */
 
 function openNav() {
@@ -29,6 +30,8 @@ function closeNav() {
   document.getElementById("main").style.marginLeft= "0";
 }
 
-function closePopUp(){
-  document.getElementsById("popupM").style.visibility = "hidden";
+function closePopUp(id) {
+  document.getElementById(id).style.display = 'none';
+  
 }
+
