@@ -1,30 +1,30 @@
+
+
 nav{
     font-family: 'Press Start 2P', cursive;
 }
 body 
 {
-    background-image: url('bwcheckz.png') ;
-    background-repeat: repeat;
+    background-image: url('https://i.pinimg.com/originals/dc/7a/d9/dc7ad9f368c6aea89c12805c7d2bf2c3.png') ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     font-family: 'Press Start 2P', cursive;
     font-size: 15px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
 section 
 {
-    margin: 50px 50px 100px 50px;
+    margin: 50px 50px 50px 50px;
     font-family: 'Press Start 2P', cursive;
     font-size: 15px;
 }
 
-#initial
+#appRow
 {
-    margin: 50px 50px 0px 50px;
-}
-
-aside
-{
-    font-family: 'Press Start 2P', cursive;
-    font-size: 15px;
+    margin-top: 50px;
 }
 
 .popup 
@@ -39,6 +39,8 @@ aside
     
 }
 
+
+
 .txtbox 
 {
     background-color: #ffccff;
@@ -51,11 +53,7 @@ aside
 }
 .close {
     vertical-align: right;
-    
     color: white;
-    border-style: outset;
-    border-color: grey;
-    border-width: 5px;
     background-color: red;
     position: relative;
     width: 20px;
@@ -112,13 +110,42 @@ aside
     font-size: 36px;
     margin-left: 50px;
   }
+
+
+  .menu
+{
+    height: 0%;
+    width: 0%;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background-color: #4747d1a2;
+    overflow: hidden;
+    padding: 5px;
+    transition: 0.5s;
+    
+    
+}
+
+/* Position and style the close button (top right corner) */
+.menu .closebtn {
+    position: absolute;
+    top: 100px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
   
 
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main {
+  #main_Sidebar{
     transition: margin-left .5s; /* If you want a transition effect */
-    padding: 20px;
+  }
+
+  #main_Menu{
+    transition: margin-bottom .5s; /* If you want a transition effect */
   }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -127,9 +154,9 @@ aside
     .sidebar a {font-size: 18px;}
   }
 
-  .notification {
-    background-color:blue;
-    border-color: #6699ff;
+  .app {
+    background-color:darkgrey;
+    border-color: lightgray;
     border-style: dotted;
     color: white;
     text-decoration: none;
@@ -139,16 +166,31 @@ aside
     border-radius: 25px;
   }
   
-  .notification:hover {
+  #messages
+  {
+    background-color:blue;
+    border-color: #6699ff;
+      
+  }
+  #messages:hover {
     background: #6699ff;
   }
   
-  .notification .badge {
+  #messages .badge {
     position: absolute;
-    top: -10px;
-    right: -10px;
+    top: -20px;
+    right: -20px;
     padding: 5px 10px;
     border-radius: 50%;
-    background: red;
-    color: white;
+    
+  }
+  
+  #paint
+  {
+    background-color:#cc00ff;
+    border-color: #e066ff;
+  }
+  
+  #paint:hover{
+      background: #e066ff;
   }

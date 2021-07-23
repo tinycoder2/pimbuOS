@@ -28,66 +28,59 @@
     
     <!--top msg n notif bubble-->
 
+    <section class="overflow-hidden" id="initial">
     
-    
-    <nav class="navbar fixed-bottom navbar-dark" style="background-color: rgb(255, 204, 102, 0.6);">
+    <nav class="navbar fixed-bottom navbar-dark" style="background-color: black; padding: 17px;">
         
-        <div id="main_Menu">
-            <button onclick="toggleMenu()">
-                <i class="fa fa-home"></i>
-            </button>
-        </div>
-        
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarText">
+            <i class="fa fa-home whiteiconcolor"></i>
+        </button>
 
-        <div id="myMenu" class="menu">
+        <a class="navbar-brand" href="index.html" >s w a h a a</a>
 
-                <div class="d-grid gap-2" style="margin-top: 15%;">
-                    <button type="button">See my work</button>
-                    <button type="button">Send me a message</button>
-                    <button type="button">Contact me</button>
-                    <button type="button">Leave this site</button>
-                </div>
-
-        </div>
-        <a class="navbar-brand" href="index.html">s w a h a a</a>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="slides.htm">My Work</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>   
     </nav>
+    <div class="row">
+        <div class="col col-10">
 
-    <!--APPZ-->
-    <section class="overflow-hidden" id="appRow">
-    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4"  style="text-align: center; padding: 20px;">
-        
-        <div class="col">
-            <div id="main">
-                <button class="app" id="messages" onclick="openNav()" style="margin-bottom: 10%;">
-                    <span style="font-size: 30px;">✉️</span>
-                    <span class="badge" style="font-size: 30px;">❤️</span>
-                </button>
+            <!--initial message-->
+            <div class="popup" id="popup1">
+                <div class="row">
+                    <div class="col col-lg-2">Message(1)</div>
+                    <div class="col">
+                        <button class="close" aria-label="Close" type="button" onclick="closePopUp('popup1')" style="background: red;"></button> 
+                    </div> 
+                </div>
+                <div class="txtbox">
+                    <p>Hello world!</p>
+                    <p>Welcome to tinycoder's personal website :D</p>
+                    
+                </div>
             </div>
+
         </div>
 
-        <div class="col"> 
-            <div id="main">
-                <button class="app" id="paint" onclick="openPaint()">
-                    <span style="font-size: 30px;">🎨</span>
-                    
-                </button>
-            </div>
-        </div>
+        <div class="col col-2"> 
 
-        <div class="col">
             <div id="main">
-                <button href="#" class="app" onclick="openNav()">
-                    <span style="font-size: 30px;">X</span>
-                    
-                </button>
-            </div>
-        </div>
-
-        <div class="col">
-            <div id="main_Sidebar">
-                <button href="#" class="app" onclick="openNav()">
-                    <span style="font-size: 30px;">X</span>
-                    
+                <button href="#" class="notification" onclick="openNav()">
+                    <span style="font-size: 30px;">&#x2709;</span>
+                    <span class="badge">!?!</span>
                 </button>
             </div>
 
@@ -98,7 +91,7 @@
         <div class="col col-2">
 
             <div id="mySidebar" class="sidebar">
-                <a class="closebtn" onclick="closeNav()">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
                     <button class="close" aria-label="Close" style="background: red; "></button>
                     
                 </a>
@@ -111,21 +104,16 @@
                 </div>
 
             </div>
+
         </div>
 
-        
-        
-
     </div>
-
-
     </section>
 
     <!--Main content zone-->
 
-    <section>
+    <section class="overflow-hidden">
     <div class="row">
-        
     
     <div class="col">
 
@@ -146,11 +134,11 @@
         </div>
         -->
         <!--wot u wan2 do-->
-        <div class="popup" id="popupWhatDo">
+        <div class="popup" id="popup3">
             <div class="row">
                 <div class="col col-lg-2">Attention!</div>
                 <div class="col">
-                    <button class="close" aria-label="Close" type="button" onclick="closePopUp('popupWhatDo')" style="background: red;"></button> 
+                    <button class="close" aria-label="Close" type="button" onclick="closePopUp('popup3')" style="background: red;"></button> 
                 </div>
                 
                 
@@ -166,9 +154,6 @@
             </div>
         </div>
 
-
-        
-
     </div>
 
     
@@ -176,12 +161,12 @@
     </div>    <!--row closer tag-->
 
     <!--initial message-->
-    <div class="popup" id="popupWelcome">
+    <div class="popup" id="popup4">
         <div class="row">
             <div class="col col-lg-2">Message(1)</div>
             <div class="col">
 
-                <button class="close" aria-label="Close" type="button" onclick="closePopUp('popupWelcome')" style="background: red;"></button> 
+                <button class="close" aria-label="Close" type="button" onclick="closePopUp('popup4')" style="background: red;"></button> 
             </div> 
         </div>
         <div class="txtbox">
@@ -191,69 +176,15 @@
         </div>
     </div>
 
-
-    <!--paint-->
-    <div class="popup" id="paintApp" style="display: none;">
-        <div class="row">
-            <div class="col col-lg-2">paint🖌️</div>
-            <div class="col">
-                <button class="close" aria-label="Close" type="button" onclick="closePaint()" style="background: red;"></button> 
-            </div>
-        </div>
-        <iframe class="responsive-iframe" height=550px width=100% src="https://jspaint.app/"></iframe>
-        
-        <!--
-        <div class="txtbox" id="paintContent">
-        
-        </div>-->
-    </div>
-
-
-
     </section>
 
-    
-    
     
 
 
 
 </body>
 
-
-
-
-
-
-
-
-
-
-
-
 <!--
   <div>Icons made by <a href="cancel.png" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     <div class="col"><img src="cancel.png" width="20" height="20" style="float:right; margin: 5px 5px"></div>
-<iframe src="https://jspaint.app/" height="500px" width="100%" title="Iframe Example"></iframe>
-
-<div class="popup" id="popup3">
-            <div class="row">
-                <div class="col col-lg-2">Attention!</div>
-                <div class="col">
-                    <button class="close" aria-label="Close" type="button" onclick="closePopUp('popup3')" style="background: red;"></button> 
-                </div>
-                
-                
-            </div>
-            <div class="txtbox">
-                <p>What do you want to do?</p>
-                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2" style="text-align: center; margin: 2px 2px;">
-                <button type="button">See my work</button>
-                <button type="button">Send me a message</button>
-                <button type="button">Contact me</button>
-                <button type="button">Leave this site</button>
-                </div>
-            </div>
-        </div>
-
 -->
