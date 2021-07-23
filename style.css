@@ -38,6 +38,11 @@ section
     text-align: left;
     
 }
+#paintApp{
+    height: 90vh;
+    padding: 0%;
+
+}
 
 
 
@@ -112,17 +117,17 @@ section
   }
 
 
-  .menu
+#myMenu
 {
     height: 0%;
     width: 0%;
     position: fixed;
     z-index: -1;
-    top: 0;
+    bottom: 0;
     left: 0;
     background-color: #4747d1a2;
     overflow: hidden;
-    padding: 5px;
+
     transition: 0.5s;
     
     

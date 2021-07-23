@@ -20,7 +20,7 @@ function toggleMenu() {
   var x = document.getElementById("myMenu");
   if (x.style.height == "0%") 
   {
-    x.style.height = "100%";
+    x.style.height = "70%";
     x.style.width = "30%";
   } 
   else 
