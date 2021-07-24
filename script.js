@@ -1,13 +1,18 @@
 
 
-function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
+function openMessages() {
+  document.getElementById("mySidebar").style.display='block';
   
   
 }
 
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
+function closeMessages() {
+  document.getElementById("mySidebar").style.display = 'none';
+  
+}
+
+function deleteMessages() {
+  document.getElementsByClassName("popupMessage").style.display='none';
   
 }
 
@@ -32,6 +37,7 @@ function toggleMenu() {
 
 function openPaint() {
   document.getElementById("appRow").style.display = 'none';
+  document.getElementById("subScreen").style.display = 'none';
   document.getElementById("paintApp").style.display = 'block';
   
 }
@@ -41,3 +47,41 @@ function closePaint() {
   document.getElementById("appRow").style.display = 'block';
   
 }
+
+function openMusic() {
+  document.getElementById("appRow").style.display = 'none';
+  document.getElementById("subScreen").style.display = 'none';
+  document.getElementById("musicApp").style.display = 'block';
+  
+}
+
+function closeMusic() {
+  document.getElementById("musicApp").style.display = 'none';
+  document.getElementById("appRow").style.display = 'block';
+  
+}
+
+function openWhatDo() {
+  document.getElementById("popupWhatDo").style.display = 'block';
+  document.getElementById("popupWelcome").style.display = 'none';
+  
+}
+
+function surprise()
+{
+     location.href = "https://youtu.be/dQw4w9WgXcQ";
+} 
+
+// function addMessages(message){
+//   let divbox = document.createElement('div');
+//   divbox.classList.add('popup');
+
+//   let textbox = document.createElement('div');
+//   textbox.classList.add('txtbox');
+
+//   divbox.appendChild(textbox);
+
+//   let text = document.createTextNode(message);
+//   textbox.appendChild(text);
+//   document.body.appendChild(divbox)
+// }

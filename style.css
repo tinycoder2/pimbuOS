@@ -2,13 +2,19 @@
 
 nav{
     font-family: 'Press Start 2P', cursive;
+    color: white;
 }
 body 
 {
-    background-image: url('https://i.pinimg.com/originals/dc/7a/d9/dc7ad9f368c6aea89c12805c7d2bf2c3.png') ;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    
+    background-image: url(https://64.media.tumblr.com/0f3927f0017e84b9c6ec69901c5a825a/tumblr_n9lwm7N7VX1tz79vpo1_r1_1280.gifv);
+    background-size:auto;
+    background-repeat:repeat-x;
+    background-attachment:fixed;
+    background-position:bottom;
+
     font-family: 'Press Start 2P', cursive;
+    color: #3d3d5c;
     font-size: 15px;
     width: 100vw;
     height: 100vh;
@@ -19,12 +25,24 @@ section
 {
     margin: 50px 50px 50px 50px;
     font-family: 'Press Start 2P', cursive;
+    color: #3d3d5c;
     font-size: 15px;
+}
+
+.button
+{
+  color: #3d3d5c;
+}
+
+.button:hover
+{
+  border: 2px dotted gray;
 }
 
 #appRow
 {
-    margin-top: 50px;
+    margin-top: 150px;
+    display: block;
 }
 
 .popup 
@@ -33,14 +51,15 @@ section
     padding: 5px 2px 0px 5px;
     margin: 0px 25px 50px 25px;
     border-style: double;
-    border-color: black;
+    border-color: #3d3d5c;
     border-width: 5px;
     text-align: left;
     
 }
+
 #paintApp{
-    height: 90vh;
-    padding: 0%;
+    height: 80vh;
+    margin: 100px 50px 100px 50px;
 
 }
 
@@ -56,6 +75,32 @@ section
    
     text-align: center;
 }
+
+.popupMessage
+{
+    background-color: #99ffd6;
+    padding: 5px 2px 0px 5px;
+    margin: 0px 25px 50px 25px;
+    border-style: double;
+    border-color: #3d3d5c;
+    border-width: 5px;
+    text-align: left;
+    display: block;
+    
+}
+
+.pptxtbox 
+{
+    background-color: #e6ffff;
+    padding: 10px;
+    margin: 5px 5px 5px 0px;
+    border-style: solid;
+    border-color: #99ffd6;
+   
+    text-align: center;
+}
+
+
 .close {
     vertical-align: right;
     color: white;
@@ -94,23 +139,31 @@ section
 
 .sidebar
 {
-    height: 100%;
-    width: 0;
+    height: 85%;
+    width: 90%;
+    margin: 5%;
     position: fixed;
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #4747d1;
+    /*
+    background-image: url('https://i.pinimg.com/originals/dc/7a/d9/dc7ad9f368c6aea89c12805c7d2bf2c3.png') ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;*/
+    background-color: #c2c2d6;
+    border-style: double;
+    border-color: #3d3d5c;
+    border-width: 5px;
+
     overflow-x: hidden;
-    padding-top: 100px;
-    transition: 0.5s;
+    
     
 }
 
 /* Position and style the close button (top right corner) */
 .sidebar .closebtn {
     position: absolute;
-    top: 100px;
+    top: 50px;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
@@ -159,6 +212,9 @@ section
     .sidebar a {font-size: 18px;}
   }
 
+
+
+  /*
   .app {
     background-color:darkgrey;
     border-color: lightgray;
@@ -199,3 +255,4 @@ section
   #paint:hover{
       background: #e066ff;
   }
+*/
