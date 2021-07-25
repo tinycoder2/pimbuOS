@@ -7,11 +7,12 @@ nav{
 body 
 {
     
-    background-image: url(https://64.media.tumblr.com/0f3927f0017e84b9c6ec69901c5a825a/tumblr_n9lwm7N7VX1tz79vpo1_r1_1280.gifv);
+    background-image: url(https://64.media.tumblr.com/010c46067b29b710ce9a508fb4171dfb/tumblr_mqvzu0DpkI1sdgezwo1_400.gifv);
     background-size:auto;
-    background-repeat:repeat-x;
+    background-repeat:repeat;
     background-attachment:fixed;
     background-position:bottom;
+    background-color: #9999e6;
 
     font-family: 'Press Start 2P', cursive;
     color: #3d3d5c;
@@ -41,7 +42,7 @@ section
 
 #appRow
 {
-    margin-top: 150px;
+    margin-top: 100px;
     display: block;
 }
 
@@ -55,6 +56,7 @@ section
     border-width: 5px;
     text-align: left;
     
+    
 }
 
 #paintApp{
@@ -63,6 +65,10 @@ section
 
 }
 
+#musicApp{
+    font-family: 'Press Start 2P', cursive;
+    color: #3d3d5c;
+}
 
 
 .txtbox 
@@ -186,16 +192,76 @@ section
     
 }
 
-/* Position and style the close button (top right corner) */
-.menu .closebtn {
-    position: absolute;
-    top: 100px;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
+.menuButton{
+  color: #3d3d5c;
+}
 
+#myImage{
+  width:100px;
+  height:100px;
+  border-radius: 50%; 
+  
+  transition: width 2s, height 2s;
+ 
+}
+
+#myImage:hover{
+  
+  border: 5px double #9a9add;
+  background-color: #4747d1;
+  opacity: 0.9;
+  
+}
+
+#myImageDiv{
+  margin-top: 10px; 
+  padding: 15px; 
+  text-align: center;
+  
+  
+}
+
+
+#myImagePopUp{
+  
+  height: 500px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  
+  
+}
+
+#aboutMe{
+  
+  height: 500px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  
+  
+}
+
+#myContact{
+  height: 500px;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+.menuButton{
+  height: 75px;
+  background-color: #9a9add;
+  opacity: 1; 
+
+}
+.menuButton:hover{
+  background-color: #9a9add;
+  border: 2px dotted #4747d1;
+}
   
   /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
   #main_Sidebar{

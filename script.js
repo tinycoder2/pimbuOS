@@ -2,6 +2,7 @@
 
 function openMessages() {
   document.getElementById("mySidebar").style.display='block';
+  document.getElementById("myMenu").style.width = '0%';
   
   
 }
@@ -25,7 +26,7 @@ function toggleMenu() {
   var x = document.getElementById("myMenu");
   if (x.style.height == "0%") 
   {
-    x.style.height = "70%";
+    x.style.height = "55%";
     x.style.width = "30%";
   } 
   else 
@@ -39,6 +40,7 @@ function openPaint() {
   document.getElementById("appRow").style.display = 'none';
   document.getElementById("subScreen").style.display = 'none';
   document.getElementById("paintApp").style.display = 'block';
+  document.getElementById("myMenu").style.width = '0%';
   
 }
 
@@ -52,6 +54,7 @@ function openMusic() {
   document.getElementById("appRow").style.display = 'none';
   document.getElementById("subScreen").style.display = 'none';
   document.getElementById("musicApp").style.display = 'block';
+  document.getElementById("myMenu").style.width = '0%';
   
 }
 
@@ -67,10 +70,53 @@ function openWhatDo() {
   
 }
 
+function openMyPic() {
+  document.getElementById("myImagePopUp").style.display = 'block';
+  document.getElementById("subScreen").style.display = 'none';
+  document.getElementById("myMenu").style.width = '0%';
+  
+}
+
+function openAbout() {
+  document.getElementById("aboutMe").style.display = 'block';
+  document.getElementById("subScreen").style.display = 'none';
+  document.getElementById("myMenu").style.width = '0%';
+  
+}
+
+function openContact() {
+  document.getElementById("myContact").style.display = 'block';
+  document.getElementById("subScreen").style.display = 'none';
+  document.getElementById("myMenu").style.width = '0%';
+  
+}
+
 function surprise()
 {
      location.href = "https://youtu.be/dQw4w9WgXcQ";
 } 
+
+
+function openFolder(id) {
+  document.getElementById("appRow").style.display = 'none';
+  document.getElementById("subScreen").style.display = 'none';
+  document.getElementById(id).style.display = 'block';
+  document.getElementById("myMenu").style.width = '0%';
+  
+}
+
+function closeFolder(id) {
+  document.getElementById(id).style.display = 'none';
+  document.getElementById("appRow").style.display = 'block';
+  
+}
+
+function openSite(link)
+{
+     location.href = link;
+} 
+
+
 
 // function addMessages(message){
 //   let divbox = document.createElement('div');

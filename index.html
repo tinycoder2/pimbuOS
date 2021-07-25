@@ -29,10 +29,10 @@
 <body>
     
     <!--top msg n notif bubble-->
-
     
     
-    <nav class="navbar fixed-bottom navbar-dark" style="background-color: rgb(255, 204, 102, 0.6); height: 50px;">
+    
+    <nav class="navbar fixed-bottom navbar-dark" style="background-color: rgba(25, 2, 84, 0.6); height: 50px;">
         
         <div id="main_Menu">
             <img onclick="toggleMenu()" src="https://img.icons8.com/dusk/40/000000/color-widgets.png"/>
@@ -43,11 +43,14 @@
 
         <div id="myMenu" class="menu" style="height: 0%; width: 0%;">
 
-                <div class="d-grid gap-2" style="margin-top: 15%;">
-                    <button class="button" type="button">See my work</button>
-                    <button class="button" type="button">Send me a message</button>
-                    <button class="button" type="button">Contact me</button>
-                    <button class="button" type="button">Leave this site</button>
+                <div class="d-grid gap-2">
+                    <div id="myImageDiv"> <img src="picrewme.png" id="myImage" onclick="openMyPic()"> </div>
+                    
+                    <button class="menuButton" type="button" onclick="openAbout()">About me</button>
+                    <button class="menuButton" type="button" onclick="openFolder('myFolder')">See my work</button>
+                    
+                    <button class="menuButton" type="button" onclick="openContact()">Contact me</button>
+                    <button class="menuButton" type="button">Leave this site</button>
                 </div>
 
         </div>
@@ -55,7 +58,7 @@
     </nav>
 
     <!--APPZ-->
-    <section class="overflow-hidden" id="appRow">
+    <section id="appRow" style="top: 100px;">
     <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4"  style="text-align: center; padding: 20px;">
         
         <div class="col">
@@ -83,7 +86,7 @@
 
         <div class="col">
             <div id="main_Sidebar">
-                <img onclick="openNav()" src="https://img.icons8.com/dusk/100/000000/typewriter-with-paper.png"/>
+                <img onclick="openFolder('myFolder')" src="https://img.icons8.com/dusk/100/000000/likes-folder--v1.png"/>
                 
             </div>
 
@@ -104,52 +107,6 @@
     <section class="overflow-hidden" id="subScreen" style="padding-top: 100px;">
     <div class="row">
         
-    
-    <div class="col">
-
-        <!--me
-        <div class="popup" id="popup2">
-            <div class="row">
-                <div class="col col-8">me.jpeg</div>
-                <div class="col">
-                    <button class="close" aria-label="Close" type="button" onclick="closePopUp('popup2')" style="background: red;"></button> 
-                </div>
-                
-            </div>
-            
-            
-            <div class="txtbox">
-                <img src="picrewme.png" style="width:100%;height:100%;object-fit:cover;">
-            </div>
-        </div>
-        -->
-        <!--wot u wan2 do-->
-        <div class="popup" id="popupWhatDo" style="display: none;">
-            <div class="row">
-                <div class="col col-8">Attention!</div>
-                <div class="col">
-                    <button class="close" aria-label="Close" type="button" onclick="closePopUp('popupWhatDo')" style="background: red;"></button> 
-                </div>
-                
-                
-            </div>
-            <div class="txtbox">
-                <p>What do you want to do?</p>
-                <div class="d-grid gap-2">
-                <button class="button" type="button">see my work</button>
-                <button class="button" type="button">contact me ;)</button>
-                <button class="button" type="button">nothing</button>
-                <button class="button" type="button">leave this site</button>
-                </div>
-            </div>
-        </div>
-
-
-        
-
-    </div>
-
-    
 
     </div>    <!--row closer tag-->
 
@@ -163,7 +120,7 @@
             </div> 
         </div>
         <div class="txtbox">
-            <p>Welcome to tinycoder's corner of the internet :D</p>
+            <p>Welcome to pimbuOS</p>
             <p>I hope you enjoy your stay here!</p>
             <p>p.s. this site looks better on a desktop ;_;</p>
             <div class="row" style="margin: 2px 2px;">
@@ -177,13 +134,132 @@
         </div>
     </div>
 
-    
+    <div class="col">
 
-   
+        <!--wot u wan2 do-->
+        <div class="popup" id="popupWhatDo" style="display: none;">
+            <div class="row">
+                <div class="col col-8">Attention!</div>
+                <div class="col">
+                    <button class="close" aria-label="Close" type="button" onclick="closePopUp('popupWhatDo')" style="background: red;"></button> 
+                </div>
+                
+                
+            </div>
+            <div class="txtbox">
+                <p>What do you want to do?</p>
+                <div class="d-grid gap-2">
+                
+                <button class="button" type="button" onclick="openAbout()">know about me ;)</button>
+                <button class="button" type="button" onclick="openFolder('myFolder')">see my work</button>
+                <button class="button" type="button" onclick="openContact()">contact me</button>
+                <button class="button" type="button" onclick="closePopUp('popupWhatDo')">nothing</button>
+                <button class="button" type="button">leave this site</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
     </section>
 
    
     <section>
+        <!-- ABOUT ME -->
+        <div class="popup" id="aboutMe" style="display: none;">
+            <div class="row">
+                <div class="col col-8">About Me</div>
+                <div class="col">
+    
+                    <button class="close" aria-label="Close" type="button" onclick="closePopUp('aboutMe')" style="background: red;"></button> 
+                </div> 
+            </div>
+            <div class="txtbox">
+                <div class="row">
+                    <div class="col" style="margin-left: 10px; border-right: 2px dashed pink; padding: 5px;">
+                        <div id="myImageDiv"> <img src="picrewme.png" id="myImage"> </div>
+                        <div style="padding: 5px; border-top: 2px dashed pink; padding: 5px;"> 
+                            <p> my interests </p> 
+
+                            <div class="row">
+                                <div class="col" style="padding: 5px"><img src="https://img.icons8.com/dusk/64/000000/html-5.png"/></div>
+                                <div class="col" style="padding: 5px"><img src="https://img.icons8.com/dusk/64/000000/css3.png"/></div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col" style="padding: 5px"><img src="https://img.icons8.com/dusk/64/000000/python.png"/></div>
+                                <div class="col" style="padding: 5px"><img src="https://img.icons8.com/dusk/64/000000/c-plus-plus.png"/></div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col" style="padding: 5px"><img src="https://img.icons8.com/dusk/64/000000/blender-3d.png"/></div>
+                                <div class="col" style="padding: 5px"><img src="https://img.icons8.com/dusk/64/000000/raspberry-pi.png"/></div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporli7cxfrgo4u vc6657 f76tufg4r6y vc6f0687fr incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    
+                    </div>
+
+                </div>
+            
+            </div>
+        </div>
+
+        <!--CONTACTY ME-->
+        
+        <div class="popup" id="myContact" style="display: none;">
+            <div class="row">
+                <div class="col col-8">My Socials</div>
+                <div class="col">
+
+                    <button class="close" aria-label="Close" type="button" onclick="closePopUp('myContact')" style="background: red;"></button> 
+                </div> 
+            </div>
+            <div class="txtbox">
+                <div class="row">
+                    <div class="col"><img src="https://img.icons8.com/dusk/64/000000/twitter-circled.png"/></div>
+                    <div class="col-8">
+                        <p><a href="https://twitter.com/tinycoder2">contact me on Twitter</a></p>
+                    </div>
+                </div>
+                <div class="row" style="padding: 5px; border-top: 2px dashed pink; padding: 5px;">
+                    <div class="col"><img src="https://img.icons8.com/dusk/64/000000/linkedin.png"/></div>
+                    <div class="col-8">
+                        <p><a href="https://www.linkedin.com/in/swaathykumar">contact me on LinkedIn</a></p>
+                    </div>
+                </div>
+                <div class="row" style="padding: 5px; border-top: 2px dashed pink; padding: 5px;">
+                    <div class="col"><img src="https://img.icons8.com/dusk/64/000000/github.png"/></div>
+                    <div class="col-8">
+                        <p><a href="https://github.com/tinycoder2">check out my Github</a></p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+
+        <!--ME JPG-->
+        <div class="popup" id="myImagePopUp" style="display: none;">
+            <div class="row">
+                <div class="col col-8">me.jpeg</div>
+                <div class="col">
+                    <button class="close" aria-label="Close" type="button" onclick="closePopUp('myImagePopUp')" style="background: red;"></button> 
+                </div>
+                
+            </div>
+            
+            
+            <div class="txtbox">
+                <img src="picrewme.png" style="height: 430px; width: 450px;">
+            </div>
+        </div>
+
+
          <!--paint-->
         <div class="popup" id="paintApp" style="display: none;">
             <div class="row">
@@ -197,6 +273,7 @@
     
         </div>
         
+        <!--MUJIKKK-->
         <div class="popup" id="musicApp" style="display: none; height: 85%;width: 90%; margin: 5%;">
             <div class="row">
                 <div class="col col-8">music</div>
@@ -208,6 +285,65 @@
     
     
         </div>
+
+        <!--MY WORK-->
+        <div class="popup" id="myFolder" style="display: none">
+            <div class="row">
+                <div class="col col-8">My Work</div>
+                <div class="col">
+                    <button class="close" aria-label="Close" type="button" onclick="closeFolder('myFolder')" style="background: red;"></button> 
+                </div>
+            </div>
+            <!--FOLDER ICONZ-->
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4"  style="text-align: center; padding: 20px; margin: 3px; background-color: #d6d6f5;">
+        
+                <div class="col">
+                    <div id="main">
+                        <img onclick="openFolder('myFolder1')" src="https://img.icons8.com/dusk/70/000000/folder-invoices.png"/>
+                        <p>portfolio website</p>
+                    </div>
+                </div>
+        
+                <div class="col"> 
+                    <div id="main">
+                        <img onclick="openSite('https://github.com/tinycoder2/portfolioSite')" src="https://img.icons8.com/dusk/70/000000/source-code.png"/>
+                        <p>this website code</p>
+                    </div>
+                </div>
+        
+            </div>
+            
+        </div>
+        <!--MY FOLDER !-->
+        <div class="popup" id="myFolder1" style="display: none">
+            <div class="row">
+                <div class="col col-8">My Work/portfolio website</div>
+                <div class="col">
+                    <button class="close" aria-label="Close" type="button" onclick="closeFolder('myFolder1')" style="background: red;"></button> 
+                </div>
+            </div>
+            <!--FOLDER ICONZ-->
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4"  style="text-align: center; padding: 20px; margin: 3px; background-color: #d6d6f5;">
+        
+                <div class="col">
+                    <div id="main">
+                        <img onclick="openSite('https://tinycoder2.github.io/portfolioSite/')" src="https://img.icons8.com/dusk/70/000000/web.png"/>
+                        <p>website</p>
+                    </div>
+                </div>
+        
+                <div class="col"> 
+                    <div id="main">
+                        <img onclick="openSite('https://github.com/tinycoder2/portfolioSite')" src="https://img.icons8.com/dusk/70/000000/source-code.png"/>
+                        <p>code</p>
+                    </div>
+                </div>
+        
+            </div>
+            
+        </div>
+
+        
 
 
         <!--Side notifz bar-->
@@ -332,8 +468,6 @@
 
     </section>
     
-    
-
 
 
 </body>
@@ -352,28 +486,6 @@
 <!--
   <div>Icons made by <a href="cancel.png" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     <div class="col"><img src="cancel.png" width="20" height="20" style="float:right; margin: 5px 5px"></div>
-<iframe src="https://jspaint.app/" height="500px" width="100%" title="Iframe Example"></iframe>
-
-<div class="popup" id="popup3">
-            <div class="row">
-                <div class="col col-8">Attention!</div>
-                <div class="col">
-                    <button class="close" aria-label="Close" type="button" onclick="closePopUp('popup3')" style="background: red;"></button> 
-                </div>
-                
-                
-            </div>
-            <div class="txtbox">
-                <p>What do you want to do?</p>
-                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2" style="text-align: center; margin: 2px 2px;">
-                <button type="button">See my work</button>
-                <button type="button">Send me a message</button>
-                <button type="button">Contact me</button>
-                <button type="button">Leave this site</button>
-                </div>
-            </div>
-        </div>
-
 
 <button class="app" id="messages" onclick="openNav()" style="margin-bottom: 10%;">
                     <span style="font-size: 30px;">✉️</span>
