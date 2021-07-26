@@ -1,6 +1,8 @@
 
 
 function openMessages() {
+  document.getElementById("appRow").style.display = 'none';
+  document.getElementById("subScreen").style.display = 'none';
   document.getElementById("mySidebar").style.display='block';
   document.getElementById("myMenu").style.width = '0%';
   
@@ -9,6 +11,8 @@ function openMessages() {
 
 function closeMessages() {
   document.getElementById("mySidebar").style.display = 'none';
+  document.getElementById("appRow").style.display = 'block';
+  document.getElementById("subScreen").style.display = 'block';
   
 }
 
@@ -26,7 +30,7 @@ function toggleMenu() {
   var x = document.getElementById("myMenu");
   if (x.style.height == "0%") 
   {
-    x.style.height = "55%";
+    x.style.height = "75%";
     x.style.width = "30%";
   } 
   else 
@@ -47,6 +51,7 @@ function openPaint() {
 function closePaint() {
   document.getElementById("paintApp").style.display = 'none';
   document.getElementById("appRow").style.display = 'block';
+  document.getElementById("subScreen").style.display = 'block';
   
 }
 
@@ -61,6 +66,7 @@ function openMusic() {
 function closeMusic() {
   document.getElementById("musicApp").style.display = 'none';
   document.getElementById("appRow").style.display = 'block';
+  document.getElementById("subScreen").style.display = 'block';
   
 }
 
@@ -86,6 +92,13 @@ function openAbout() {
 
 function openContact() {
   document.getElementById("myContact").style.display = 'block';
+  document.getElementById("subScreen").style.display = 'none';
+  document.getElementById("myMenu").style.width = '0%';
+  
+}
+
+function openLeave() {
+  document.getElementById("popupLeave").style.display = 'block';
   document.getElementById("subScreen").style.display = 'none';
   document.getElementById("myMenu").style.width = '0%';
   

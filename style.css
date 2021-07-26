@@ -42,15 +42,33 @@ section
 
 #appRow
 {
-    margin-top: 100px;
+    
     display: block;
+    margin: 50px;
 }
 
 .popup 
 {
     background-color: #bb99ff;
     padding: 5px 2px 0px 5px;
-    margin: 0px 25px 50px 25px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    border-style: double;
+    border-color: #3d3d5c;
+    border-width: 5px;
+    text-align: left;
+    max-width: 800px;
+    
+}
+
+.popupWindow 
+{
+    background-color: #bb99ff;
+    padding: 5px 2px 0px 5px;
+    margin-left: auto;
+    margin-right: auto;
+    
     border-style: double;
     border-color: #3d3d5c;
     border-width: 5px;
@@ -61,13 +79,15 @@ section
 
 #paintApp{
     height: 80vh;
-    margin: 100px 50px 100px 50px;
+    /*margin: 100px 50px 100px 50px;*/
+    
 
 }
 
 #musicApp{
     font-family: 'Press Start 2P', cursive;
     color: #3d3d5c;
+    
 }
 
 
@@ -92,6 +112,7 @@ section
     border-width: 5px;
     text-align: left;
     display: block;
+    
     
 }
 
@@ -235,8 +256,8 @@ section
 
 #aboutMe{
   
-  height: 500px;
-  width: 700px;
+  min-width: 400px;
+  
   margin-left: auto;
   margin-right: auto;
   z-index: 1;
@@ -245,8 +266,9 @@ section
 }
 
 #myContact{
-  height: 500px;
-  width: 700px;
+  height: 50%;
+  width: 50%;
+  min-width: 300px;
   margin-left: auto;
   margin-right: auto;
   z-index: 1;

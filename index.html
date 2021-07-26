@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tinycoder</title>
+    <title>pimbuOS</title>
+
     <!--for nav bar-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
    
+    <!--srcfiLeZ-->
     <link rel="stylesheet" href="style.css">
     <script src="./script.js"></script>
     
@@ -28,9 +30,11 @@
 
 <body>
     
+    <!--quik fix forgive me nothing else works im cry-->
+    <div style="margin-top: 100px;"><p>.</p></div>
+
+
     <!--top msg n notif bubble-->
-    
-    
     
     <nav class="navbar fixed-bottom navbar-dark" style="background-color: rgba(25, 2, 84, 0.6); height: 50px;">
         
@@ -47,14 +51,14 @@
                     <div id="myImageDiv"> <img src="picrewme.png" id="myImage" onclick="openMyPic()"> </div>
                     
                     <button class="menuButton" type="button" onclick="openAbout()">About me</button>
-                    <button class="menuButton" type="button" onclick="openFolder('myFolder')">See my work</button>
+                    <button class="menuButton" type="button" onclick="openFolder('myFolder')">My work</button>
                     
                     <button class="menuButton" type="button" onclick="openContact()">Contact me</button>
-                    <button class="menuButton" type="button">Leave this site</button>
+                    <button class="menuButton" type="button" onclick="openLeave()">Leave this site</button>
                 </div>
 
         </div>
-        <a class="navbar-brand" href="index.html">s w a h a a</a>
+        <a class="navbar-brand" href="index.html">p i m b u</a>
     </nav>
 
     <!--APPZ-->
@@ -86,17 +90,13 @@
 
         <div class="col">
             <div id="main_Sidebar">
-                <img onclick="openFolder('myFolder')" src="https://img.icons8.com/dusk/100/000000/likes-folder--v1.png"/>
+                <img onclick="openFolder('myFolder')" src="https://img.icons8.com/dusk/100/000000/code-folder.png"/>
                 
             </div>
 
         </div>
 
         
-
-        
-        
-
     </div>
 
 
@@ -104,11 +104,8 @@
 
     <!--Main content zone-->
 
-    <section class="overflow-hidden" id="subScreen" style="padding-top: 100px;">
-    <div class="row">
-        
-
-    </div>    <!--row closer tag-->
+    <section class="overflow-hidden" id="subScreen" style="padding-bottom: 100px;">
+    
 
     <!--initial message-->
     <div class="popup" id="popupWelcome">
@@ -134,6 +131,8 @@
         </div>
     </div>
 
+    
+
     <div class="col">
 
         <!--wot u wan2 do-->
@@ -154,7 +153,7 @@
                 <button class="button" type="button" onclick="openFolder('myFolder')">see my work</button>
                 <button class="button" type="button" onclick="openContact()">contact me</button>
                 <button class="button" type="button" onclick="closePopUp('popupWhatDo')">nothing</button>
-                <button class="button" type="button">leave this site</button>
+                
                 </div>
             </div>
         </div>
@@ -174,34 +173,41 @@
                     <button class="close" aria-label="Close" type="button" onclick="closePopUp('aboutMe')" style="background: red;"></button> 
                 </div> 
             </div>
-            <div class="txtbox">
+            <div class="txtbox" style="min-height: 350px;">
                 <div class="row">
-                    <div class="col" style="margin-left: 10px; border-right: 2px dashed pink; padding: 5px;">
+                    <div class="col" style="margin-left: 10px; border-right: 2px dashed pink; padding: 5px; overflow: hidden;">
                         <div id="myImageDiv"> <img src="picrewme.png" id="myImage"> </div>
                         <div style="padding: 5px; border-top: 2px dashed pink; padding: 5px;"> 
                             <p> my interests </p> 
 
                             <div class="row">
-                                <div class="col" style="padding: 5px"><img src="https://img.icons8.com/dusk/64/000000/html-5.png"/></div>
-                                <div class="col" style="padding: 5px"><img src="https://img.icons8.com/dusk/64/000000/css3.png"/></div>
-
-                            </div>
-                            <div class="row">
+                                <div class="col" style="padding: 5px"><img src="https://img.icons8.com/dusk/64/000000/developer.png"/></div>
                                 <div class="col" style="padding: 5px"><img src="https://img.icons8.com/dusk/64/000000/python.png"/></div>
                                 <div class="col" style="padding: 5px"><img src="https://img.icons8.com/dusk/64/000000/c-plus-plus.png"/></div>
+                                
 
                             </div>
                             <div class="row">
-                                <div class="col" style="padding: 5px"><img src="https://img.icons8.com/dusk/64/000000/blender-3d.png"/></div>
-                                <div class="col" style="padding: 5px"><img src="https://img.icons8.com/dusk/64/000000/raspberry-pi.png"/></div>
+                                <div class="col" style="padding: 5px"><img src="https://img.icons8.com/dusk/64/000000/paint-palette.png"/></div>
+                                <div class="col" style="padding: 5px"><img src="https://img.icons8.com/dusk/64/000000/saving-book.png"/></div>
+                                <div class="col" style="padding: 5px"><img src="https://img.icons8.com/dusk/64/000000/naruto.png"/></div>
 
                             </div>
+                            
 
                         </div>
                     </div>
                     <div class="col-8">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporli7cxfrgo4u vc6657 f76tufg4r6y vc6f0687fr incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    
+                        <p>Hi there!
+                            My name is Swaathy Kumar.
+                            I am a second year CSE student at VIT University.
+                            I am also a Bharathanatyam dancer.
+                            Currently due to the pandemic I've been stuck at home for about 16 months now, having an existential crisis and attending online classes.
+                            So I decided to make this site for fun and hopefully display my upcoming projects in the form of apps here.
+                            Annnnnnnnnd thats pretty much it. 
+                            Thanks for checking out this site 🥰
+
+                        </p>
                     </div>
 
                 </div>
@@ -220,21 +226,22 @@
                 </div> 
             </div>
             <div class="txtbox">
-                <div class="row">
-                    <div class="col"><img src="https://img.icons8.com/dusk/64/000000/twitter-circled.png"/></div>
-                    <div class="col-8">
+                
+                <div class="row" style=" padding: 5px;">
+                    <div class="col" style="padding: 10px;"><img src="https://img.icons8.com/dusk/64/000000/twitter-circled.png"/></div>
+                    <div class="col-8" style="padding: 10px;">
                         <p><a href="https://twitter.com/tinycoder2">contact me on Twitter</a></p>
                     </div>
                 </div>
-                <div class="row" style="padding: 5px; border-top: 2px dashed pink; padding: 5px;">
-                    <div class="col"><img src="https://img.icons8.com/dusk/64/000000/linkedin.png"/></div>
-                    <div class="col-8">
+                <div class="row" style="padding: 5px; border-top: 2px dashed pink;">
+                    <div class="col" style="padding: 10px;"><img src="https://img.icons8.com/dusk/64/000000/linkedin.png"/></div>
+                    <div class="col-8" style="padding: 10px;">
                         <p><a href="https://www.linkedin.com/in/swaathykumar">contact me on LinkedIn</a></p>
                     </div>
                 </div>
-                <div class="row" style="padding: 5px; border-top: 2px dashed pink; padding: 5px;">
-                    <div class="col"><img src="https://img.icons8.com/dusk/64/000000/github.png"/></div>
-                    <div class="col-8">
+                <div class="row" style="padding: 5px; border-top: 2px dashed pink;">
+                    <div class="col" style="padding: 10px;"><img src="https://img.icons8.com/dusk/64/000000/github.png"/></div>
+                    <div class="col-8" style="padding: 10px;">
                         <p><a href="https://github.com/tinycoder2">check out my Github</a></p>
                     </div>
                 </div>
@@ -260,8 +267,32 @@
         </div>
 
 
+        <!--ERROR-->
+   
+        <div class="popup" id="popupLeave" style="display: none;">
+            <div class="row">
+                <div class="col col-8"> Error! </div>
+                <div class="col">
+
+                    <button class="close" aria-label="Close" type="button" onclick="closePopUp('popupLeave')" style="background: red;"></button> 
+                </div> 
+            </div>
+            <div class="txtbox">
+                <p><img src="https://img.icons8.com/dusk/50/000000/error.png"/></p>
+                <p>Exit denied.</p>
+                <p>( plis don't go 👉👈 )</p>
+                <div class="row" style="margin: 2px 2px;">
+                    <div class="col" style="text-align: right;"> <button class="button" type="button" style="width: 100%;"  onclick="closePopUp('popupLeave')">dude leave me alone</button> </div>
+                    <div class="col" style="text-align: left;"> <button class="button" type="button" style="width: 100%; max-height: 60px;" onclick="closePopUp('popupLeave')">ok 🗿</button> </div>
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+
          <!--paint-->
-        <div class="popup" id="paintApp" style="display: none;">
+        <div class="popupWindow" id="paintApp" style="display: none;">
             <div class="row">
                 <div class="col col-8">paint🖌️</div>
                 <div class="col">
@@ -274,7 +305,7 @@
         </div>
         
         <!--MUJIKKK-->
-        <div class="popup" id="musicApp" style="display: none; height: 85%;width: 90%; margin: 5%;">
+        <div class="popupWindow" id="musicApp" style="display: none; height: 85%;width: 90%; margin: 5%;">
             <div class="row">
                 <div class="col col-8">music</div>
                 <div class="col">
@@ -287,7 +318,7 @@
         </div>
 
         <!--MY WORK-->
-        <div class="popup" id="myFolder" style="display: none">
+        <div class="popup" id="myFolder" style="display: none; background-color: #99bbff;">
             <div class="row">
                 <div class="col col-8">My Work</div>
                 <div class="col">
@@ -306,7 +337,7 @@
         
                 <div class="col"> 
                     <div id="main">
-                        <img onclick="openSite('https://github.com/tinycoder2/portfolioSite')" src="https://img.icons8.com/dusk/70/000000/source-code.png"/>
+                        <img onclick="openSite('https://github.com/tinycoder2/pimbuOS')" src="https://img.icons8.com/dusk/70/000000/source-code.png"/>
                         <p>this website code</p>
                     </div>
                 </div>
@@ -315,7 +346,7 @@
             
         </div>
         <!--MY FOLDER !-->
-        <div class="popup" id="myFolder1" style="display: none">
+        <div class="popup" id="myFolder1" style="display: none;  background-color: #99bbff;">
             <div class="row">
                 <div class="col col-8">My Work/portfolio website</div>
                 <div class="col">
@@ -355,7 +386,7 @@
                 </div> 
             </div>
             
-            <div class="txtbx" >
+            <div class="txtbx" style="text-align: center;">
             <div class="d-grid gap-2" style="margin: 10px;" id="popupMessages">
                 
                 <!--notif MESSAGE-->
@@ -416,7 +447,7 @@
                 <!--notif MESSAGE-->
                 <div class="popupMessage" id="popupMessage4">
                     <div class="row">
-                        <div class="col col-8">Remainder</div>
+                        <div class="col col-8">Reminder</div>
                         <div class="col">
                             <button class="close" aria-label="Close" type="button" onclick="closePopUp('popupMessage4')" style="background: red;"></button> 
                         </div> 
@@ -450,26 +481,13 @@
                     </div>
                 </div>
 
-                
-
-
-
-
             </div>
             </div>
 
         </div>
 
-    
-
-        
-
-
-
     </section>
     
-
-
 </body>
 
 
