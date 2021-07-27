@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +10,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-   
+
     <!--srcfiLeZ-->
     <link rel="stylesheet" href="style.css">
     <script src="./script.js"></script>
-    
+
     <!--buttonz-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,391 +24,387 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
-    <!--app icons-->
+    <!--apps-->
     <link href="https://icons8.com/"></link>
 
 </head>
 
 <body>
-    
-    <!--quik fix forgive me nothing else works im cry
-    <div style="margin-top: 100px;"><p>.</p></div>-->
+
+
 
 
     <!--top msg n notif bubble-->
-    
+
     <nav class="navbar fixed-bottom navbar-dark" style="background-color: rgba(25, 2, 84, 0.6); height: 50px;">
-        
+
         <div id="main_Menu">
-            <img onclick="toggleMenu()" src="https://img.icons8.com/dusk/40/000000/color-widgets.png"/>
+            <img onclick="toggleMenu()" src="https://img.icons8.com/dusk/40/000000/color-widgets.png" />
             <!--homeicon : "https://img.icons8.com/dusk/40/000000/home.png"-->
-            
+
         </div>
-        
+
 
         <div id="myMenu" class="menu" style="height: 0%; width: 0%;">
 
-                <div class="d-grid gap-2">
-                    <div id="myImageDiv"> <img src="picrewme.png" id="myImage" onclick="openMyPic()"> </div>
-                    
-                    <button class="menuButton" type="button" onclick="openAbout()">About me</button>
-                    <button class="menuButton" type="button" onclick="openFolder('myFolder')">My work</button>
-                    
-                    <button class="menuButton" type="button" onclick="openContact()">Contact me</button>
-                    <button class="menuButton" type="button" onclick="openLeave()">Leave this site</button>
-                </div>
+            <div class="d-grid gap-2">
+                <div id="myImageDiv"> <img src="picrewme.png" id="myImage" onclick="openMyPic()"> </div>
+
+                <button class="menuButton" type="button" onclick="openAbout()">About me</button>
+                <button class="menuButton" type="button" onclick="openFolder('myFolder')">My work</button>
+
+                <button class="menuButton" type="button" onclick="openContact()">Contact me</button>
+                <button class="menuButton" type="button" onclick="openLeave()">Leave this site</button>
+            </div>
 
         </div>
-        <a class="navbar-brand" href="index.html">p i m b u</a>
+        <a class="navbar-brand" style="color: antiquewhite;" href="index.html">p i m b u</a>
     </nav>
 
     <!--APPZ-->
-    <section id="appRow" style="top: 100px;">
-    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4"  style="text-align: center; padding: 25px;">
-        
-        <div class="col" style="color: white;">
-            <div id="main">
-                <img onclick="openMessages()" style="margin-bottom: 10%;" src="https://img.icons8.com/dusk/100/000000/imessage.png"/>
-                
+    <section id="appRow">
+        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4" style="text-align: center; padding: 25px;">
+
+            <div class="col" style="color: antiquewhite;">
+                <div>
+                    <img class="icon" onclick="openMessages()" style="margin-bottom: 10%;" src="https://img.icons8.com/dusk/90/000000/imessage.png" />
+
+                </div>
+                read
             </div>
-            read
-        </div>
 
-        <div class="col" style="color: white;"> 
-            <div id="main">
-                <img onclick="openPaint()" style="margin-bottom: 10%;" src="https://img.icons8.com/dusk/100/000000/drawing.png"/>
-                
+            <div class="col" style="color: antiquewhite;">
+                <div>
+                    <img class="icon" onclick="openPaint()" style="margin-bottom: 10%;" src="https://img.icons8.com/dusk/90/000000/drawing.png" />
+
+                </div>
+                create
             </div>
-            create
-        </div>
 
-        <div class="col" style="color: white;">
-            <div id="main">
-                
-                    <img onclick="openMusic()" style="margin-bottom: 10%;" src="https://img.icons8.com/dusk/100/000000/spotify.png"/>
-                    
-                
+            <div class="col" style="color: antiquewhite;">
+                <div>
+
+                    <img class="icon" onclick="openMusic()" style="margin-bottom: 10%;" src="https://img.icons8.com/dusk/90/000000/spotify.png" />
+
+
+                </div>
+                listen
             </div>
-            listen
-        </div>
 
-        <div class="col" style="color: white;">
-            <div id="main_Sidebar">
-                <img onclick="openFolder('myFolder')" style="margin-bottom: 10%;" src="https://img.icons8.com/dusk/100/000000/code-folder.png"/>
-                
+            <div class="col" style="color: antiquewhite;">
+                <div>
+                    <img class="icon" onclick="openFolder('myFolder')" style="margin-bottom: 10%;" src="https://img.icons8.com/dusk/90/000000/code-folder.png" />
+
+                </div>
+                explore
+
             </div>
-            explore
+
 
         </div>
-
-        
-    </div>
 
 
     </section>
 
     <!--Main content zone-->
 
-    <section class="overflow-hidden" id="subScreen" style="padding-bottom: 100px;">
-    
+    <section id="subScreen" style="padding: 0% 2% 2% 2%;">
 
-    <!--initial message-->
-    <div class="popup" id="popupWelcome">
-        <div class="row">
-            <div class="col col-8">Hello world!</div>
-            <div class="col">
 
-                <button class="close" aria-label="Close" type="button" onclick="closePopUp('popupWelcome')" style="background: red;"></button> 
-            </div> 
-        </div>
-        <div class="txtbox">
-            <p>Welcome to pimbuOS</p>
-            <p>I hope you enjoy your stay here!</p>
-            <p>p.s. this site looks better on a desktop ;_;</p>
-            <div class="row" style="margin: 2px 2px;">
-                <div class="col" style="text-align: right;"> <button class="button" type="button" style="width: 65%;" onclick="openWhatDo()">no</button> </div>
-                
-                <div class="col" style="text-align: left;"> <button class="button" type="button" style="width: 65%;" onclick="openWhatDo()">ok</button> </div>
-                
-            </div>
-            
-            
-        </div>
-    </div>
-
-    
-
-    <div class="col">
-
-        <!--wot u wan2 do-->
-        <div class="popup" id="popupWhatDo" style="display: none;">
+        <!--initial message-->
+        <div class="popup" id="popupWelcome">
             <div class="row">
-                <div class="col col-8">Attention!</div>
+                <div class="col col-8">Hello world!</div>
                 <div class="col">
-                    <button class="close" aria-label="Close" type="button" onclick="closePopUp('popupWhatDo')" style="background: red;"></button> 
+
+                    <button class="close" aria-label="Close" type="button" onclick="closePopUp('popupWelcome')" style="background: red;"></button>
                 </div>
-                
-                
             </div>
             <div class="txtbox">
-                <p>What do you want to do?</p>
-                <div class="d-grid gap-2">
-                
-                <button class="button" type="button" onclick="openAbout()">know about me ;)</button>
-                <button class="button" type="button" onclick="openFolder('myFolder')">see my work</button>
-                <button class="button" type="button" onclick="openContact()">contact me</button>
-                <button class="button" type="button" onclick="closePopUp('popupWhatDo')">nothing</button>
-                
+                <p>Welcome to pimbuOS</p>
+                <p>I hope you enjoy your stay here!</p>
+
+                <div class="row" style="margin: 2px 2px;">
+                    <div class="col" style="text-align: right;"> <button class="button" type="button" style="width: 65%;" onclick="openWhatDo()">no</button> </div>
+
+                    <div class="col" style="text-align: left;"> <button class="button" type="button" style="width: 65%;" onclick="openWhatDo()">ok</button> </div>
+
                 </div>
+
+
             </div>
         </div>
 
-    </div>
+
+
+        <div class="col">
+
+            <!--wot u wan2 do-->
+            <div class="popup" id="popupWhatDo" style="display: none;">
+                <div class="row">
+                    <div class="col col-8">Attention!</div>
+                    <div class="col">
+                        <button class="close" aria-label="Close" type="button" onclick="closePopUp('popupWhatDo')" style="background: red;"></button>
+                    </div>
+
+
+                </div>
+                <div class="txtbox">
+                    <p>What do you want to do?</p>
+                    <div class="d-grid gap-2">
+
+                        <button class="button" type="button" onclick="openAbout()">know about me ;)</button>
+                        <button class="button" type="button" onclick="openFolder('myFolder')">see my work</button>
+                        <button class="button" type="button" onclick="openContact()">contact me</button>
+                        <button class="button" type="button" onclick="closePopUp('popupWhatDo')">nothing</button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
     </section>
 
-   
-    <section>
-        <!-- ABOUT ME -->
-        <div class="popup" id="aboutMe" style="display: none;">
-            <div class="row">
-                <div class="col col-8">About Me</div>
-                <div class="col">
-    
-                    <button class="close" aria-label="Close" type="button" onclick="closePopUp('aboutMe')" style="background: red;"></button> 
-                </div> 
+
+
+    <!-- ABOUT ME -->
+    <div class="popupWindow" id="aboutMe" style="display: none;">
+        <div class="row">
+            <div class="col col-8">About Me</div>
+            <div class="col">
+
+                <button class="close" aria-label="Close" type="button" onclick="closePopUp('aboutMe')" style="background: red;"></button>
             </div>
-            <div class="txtbox" style="min-height: 350px;">
-                <div class="row">
-                    <div class="col" style="margin-left: 10px; border-right: 2px dashed pink; padding: 5px; overflow: hidden;">
-                        <div id="myImageDiv"> <img src="picrewme.png" id="myImage"> </div>
-                        <div style="padding: 5px; border-top: 2px dashed pink; padding: 5px;"> 
-                            <p> my interests </p> 
+        </div>
+        <div class="txtbox">
+            <div class="row">
+                <div class="col" style="margin-left: 10px; border-right: 2px dashed pink; padding: 5px;">
+                    <div id="myImageDiv"> <img src="picrewme.png" id="myImage"> </div>
+                    <div style="padding: 5px; border-top: 2px dashed pink; padding: 5px;">
+                        <p> my interests </p>
 
-                            <div class="row">
-                                <div class="col" style="padding: 5px"><img src="https://img.icons8.com/dusk/64/000000/developer.png"/></div>
-                                <div class="col" style="padding: 5px"><img src="https://img.icons8.com/dusk/64/000000/python.png"/></div>
-                                <div class="col" style="padding: 5px"><img src="https://img.icons8.com/dusk/64/000000/c-plus-plus.png"/></div>
-                                
+                        <div class="row">
+                            <div class="col" style="padding: 5px"><img src="https://img.icons8.com/dusk/64/000000/developer.png" /></div>
+                            <div class="col" style="padding: 5px"><img src="https://img.icons8.com/dusk/64/000000/python.png" /></div>
+                            <div class="col" style="padding: 5px"><img src="https://img.icons8.com/dusk/64/000000/c-plus-plus.png" /></div>
 
-                            </div>
-                            <div class="row">
-                                <div class="col" style="padding: 5px"><img src="https://img.icons8.com/dusk/64/000000/paint-palette.png"/></div>
-                                <div class="col" style="padding: 5px"><img src="https://img.icons8.com/dusk/64/000000/saving-book.png"/></div>
-                                <div class="col" style="padding: 5px"><img src="https://img.icons8.com/dusk/64/000000/naruto.png"/></div>
-
-                            </div>
-                            
 
                         </div>
-                    </div>
-                    <div class="col-8">
-                        <p>Hi there!
-                            My name is Swaathy Kumar.
-                            I am a second year CSE student at VIT University.
-                            I am also a Bharathanatyam dancer.
-                            Currently due to the pandemic I've been stuck at home for about 16 months now, having an existential crisis and attending online classes.
-                            So I decided to make this site for fun and hopefully display my upcoming projects in the form of apps here.
-                            Annnnnnnnnd thats pretty much it. 
-                            Thanks for checking out this site 🥰
+                        <div class="row">
+                            <div class="col" style="padding: 5px"><img src="https://img.icons8.com/dusk/64/000000/paint-palette.png" /></div>
+                            <div class="col" style="padding: 5px"><img src="https://img.icons8.com/dusk/64/000000/saving-book.png" /></div>
+                            <div class="col" style="padding: 5px"><img src="https://img.icons8.com/dusk/64/000000/naruto.png" /></div>
 
-                        </p>
-                    </div>
+                        </div>
 
+
+                    </div>
                 </div>
-            
+                <div class="col" style="text-align: center;">
+                    <p>Hi there! My name is Swaathy Kumar. I am a second year CSE student at VIT University. I am also a Bharathanatyam dancer. Currently due to the pandemic I've been stuck at home for about 16 months now, having an existential crisis and
+                        attending online classes. So I decided to make this site for fun and hopefully display my upcoming projects in the form of apps here. Annnnnnnnnd thats pretty much it. Thanks for checking out this site 🥰
+
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--CONTACTY ME-->
+
+    <div class="popup" id="myContact" style="display: none;">
+        <div class="row">
+            <div class="col col-8">My Socials</div>
+            <div class="col">
+
+                <button class="close" aria-label="Close" type="button" onclick="closePopUp('myContact')" style="background: red;"></button>
             </div>
         </div>
+        <div class="txtbox">
 
-        <!--CONTACTY ME-->
-        
-        <div class="popup" id="myContact" style="display: none;">
-            <div class="row">
-                <div class="col col-8">My Socials</div>
-                <div class="col">
+            <div class="row" style=" padding: 5px;">
+                <div class="col" style="padding: 10px;"><img src="https://img.icons8.com/dusk/64/000000/twitter-circled.png" /></div>
+                <div class="col-8" style="padding: 10px;">
+                    <p><a href="https://twitter.com/tinycoder2">contact me on Twitter</a></p>
+                </div>
+            </div>
+            <div class="row" style="padding: 5px; border-top: 2px dashed pink;">
+                <div class="col" style="padding: 10px;"><img src="https://img.icons8.com/dusk/64/000000/linkedin.png" /></div>
+                <div class="col-8" style="padding: 10px;">
+                    <p><a href="https://www.linkedin.com/in/swaathykumar">contact me on LinkedIn</a></p>
+                </div>
+            </div>
+            <div class="row" style="padding: 5px; border-top: 2px dashed pink;">
+                <div class="col" style="padding: 10px;"><img src="https://img.icons8.com/dusk/64/000000/github.png" /></div>
+                <div class="col-8" style="padding: 10px;">
+                    <p><a href="https://github.com/tinycoder2">check out my Github</a></p>
+                </div>
+            </div>
 
-                    <button class="close" aria-label="Close" type="button" onclick="closePopUp('myContact')" style="background: red;"></button> 
-                </div> 
-            </div>
-            <div class="txtbox">
-                
-                <div class="row" style=" padding: 5px;">
-                    <div class="col" style="padding: 10px;"><img src="https://img.icons8.com/dusk/64/000000/twitter-circled.png"/></div>
-                    <div class="col-8" style="padding: 10px;">
-                        <p><a href="https://twitter.com/tinycoder2">contact me on Twitter</a></p>
-                    </div>
-                </div>
-                <div class="row" style="padding: 5px; border-top: 2px dashed pink;">
-                    <div class="col" style="padding: 10px;"><img src="https://img.icons8.com/dusk/64/000000/linkedin.png"/></div>
-                    <div class="col-8" style="padding: 10px;">
-                        <p><a href="https://www.linkedin.com/in/swaathykumar">contact me on LinkedIn</a></p>
-                    </div>
-                </div>
-                <div class="row" style="padding: 5px; border-top: 2px dashed pink;">
-                    <div class="col" style="padding: 10px;"><img src="https://img.icons8.com/dusk/64/000000/github.png"/></div>
-                    <div class="col-8" style="padding: 10px;">
-                        <p><a href="https://github.com/tinycoder2">check out my Github</a></p>
-                    </div>
-                </div>
-                
-            </div>
         </div>
+    </div>
 
 
-        <!--ME JPG-->
-        <div class="popup" id="myImagePopUp" style="display: none;">
-            <div class="row">
-                <div class="col col-8">me.jpeg</div>
-                <div class="col">
-                    <button class="close" aria-label="Close" type="button" onclick="closePopUp('myImagePopUp')" style="background: red;"></button> 
-                </div>
-                
+    <!--ME JPG-->
+    <div class="popup" id="myImagePopUp" style="display: none;">
+        <div class="row">
+            <div class="col col-8">me.jpeg</div>
+            <div class="col">
+                <button class="close" aria-label="Close" type="button" onclick="closePopUp('myImagePopUp')" style="background: red;"></button>
             </div>
-            
-            
-            <div class="txtbox">
-                <img src="picrewme.png" style="height: 430px; width: 450px;">
-            </div>
+
         </div>
 
 
-        <!--ERROR-->
-   
-        <div class="popup" id="popupLeave" style="display: none;">
-            <div class="row">
-                <div class="col col-8"> Error! </div>
-                <div class="col">
+        <div class="txtbox">
+            <img src="picrewme.png" style="height: 430px; width: 450px;">
+        </div>
+    </div>
 
-                    <button class="close" aria-label="Close" type="button" onclick="closePopUp('popupLeave')" style="background: red;"></button> 
-                </div> 
+
+    <!--ERROR-->
+
+    <div class="popup" id="popupLeave" style="display: none;">
+        <div class="row">
+            <div class="col col-8"> Error! </div>
+            <div class="col">
+
+                <button class="close" aria-label="Close" type="button" onclick="closePopUp('popupLeave')" style="background: red;"></button>
             </div>
-            <div class="txtbox">
-                <p><img src="https://img.icons8.com/dusk/50/000000/error.png"/></p>
-                <p>Exit denied.</p>
-                <p>( plis don't go 👉👈 )</p>
-                <div class="row" style="margin: 2px 2px;">
-                    <div class="col" style="text-align: right;"> <button class="button" type="button" style="width: 100%;"  onclick="closePopUp('popupLeave')">dude leave me alone</button> </div>
-                    <div class="col" style="text-align: left;"> <button class="button" type="button" style="width: 100%; max-height: 60px;" onclick="closePopUp('popupLeave')">ok 🗿</button> </div>
-                    
+        </div>
+        <div class="txtbox">
+            <p><img src="https://img.icons8.com/dusk/50/000000/error.png" /></p>
+            <p>Exit denied.</p>
+            <p>( plis don't go 👉👈 )</p>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2" style="margin: 2px 2px;">
+                <div class="col" style="text-align: right;"> <button class="button" type="button" style="width: 100%;" onclick="closePopUp('popupLeave')">dude leave me alone</button> </div>
+                <div class="col" style="text-align: left;"> <button class="button" type="button" style="width: 100%; max-height: 60px;" onclick="closePopUp('popupLeave')">ok 🗿</button> </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!--paint-->
+    <div class="popupWindow popupApp" id="paintApp" style="display: none;">
+        <div class="row">
+            <div class="col col-8">paint🖌️</div>
+            <div class="col">
+                <button class="close" aria-label="Close" type="button" onclick="closePaint()" style="background: red;"></button>
+            </div>
+        </div>
+        <iframe class="responsive-iframe" style="height:96%; width:100%" src="https://jspaint.app/"></iframe>
+
+
+    </div>
+
+    <!--MUJIKKK-->
+    <div class="popupWindow popupApp" id="musicApp" style="display: none; height: 85%;width: 90%; margin: 5%;">
+        <div class="row">
+            <div class="col col-8">music</div>
+            <div class="col">
+                <button class="close" aria-label="Close" type="button" onclick="closeMusic()" style="background: red;"></button>
+            </div>
+        </div>
+        <iframe src="https://open.spotify.com/embed/album/0dDzckGxFn6NLbRtmQRynC" width="100%" height="96%" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+
+    </div>
+
+    <!--MY WORK-->
+    <div class="popupWindow popupFolder" id="myFolder" style="display: none; background-color: #99bbff;">
+        <div class="row">
+            <div class="col col-8">My Work</div>
+            <div class="col">
+                <button class="close" aria-label="Close" type="button" onclick="closeFolder('myFolder')" style="background: red;"></button>
+            </div>
+        </div>
+        <!--FOLDERZ-->
+        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 d-flex justify-content-center ogfolder">
+
+            <div class="col folder">
+                <div>
+                    <img onclick="openFolder('myFolder1')" src="https://img.icons8.com/dusk/70/000000/folder-invoices.png" />
+                    <p class="folder-text">portfolio website</p>
                 </div>
-                
-                
+            </div>
+
+            <div class="col folder">
+                <div>
+                    <a target="blank" href="https://github.com/tinycoder2/pimbuOS"><img src="https://img.icons8.com/dusk/70/000000/source-code.png" alt=""> </a>
+
+                    <p class="folder-text">this website code</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!--MY FOLDER !-->
+    <div class="popupWindow popupFolder" id="myFolder1" style="display: none;  background-color: #99bbff;">
+        <div class="row">
+            <div class="col col-8">My Work/portfolio website</div>
+            <div class="col">
+                <button class="close" aria-label="Close" type="button" onclick="closeFolder('myFolder1')" style="background: red;"></button>
+            </div>
+        </div>
+        <!--FOLDERZ-->
+        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4 d-flex justify-content-center ogfolder" style="margin-top: 0%;">
+
+            <div class="col folder">
+                <div>
+                    <a target="blank" href="https://tinycoder2.github.io/portfolioSite/"><img src="https://img.icons8.com/dusk/70/000000/web.png" alt=""> </a>
+
+                    <p class="folder-text">website</p>
+                </div>
+            </div>
+
+            <div class="col folder">
+                <div>
+                    <a target="blank" href="https://github.com/tinycoder2/portfolioSite"><img src="https://img.icons8.com/dusk/70/000000/source-code.png" alt=""> </a>
+
+                    <p class="folder-text">code</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <!--Side notifz bar-->
+    <div id="mySidebar" class="sidebar" style="display: none;">
+        <div class="row" style="background-color: #52527a;">
+            <div class="col col-8" style="margin-left: 5px; color: white;"> Messages from author </div>
+            <div class="col">
+                <button class="close" aria-label="Close" type="button" onclick="closeMessages()" style="background: red;"></button>
             </div>
         </div>
 
-         <!--paint-->
-        <div class="popupWindow" id="paintApp" style="display: none;">
-            <div class="row">
-                <div class="col col-8">paint🖌️</div>
-                <div class="col">
-                    <button class="close" aria-label="Close" type="button" onclick="closePaint()" style="background: red;"></button> 
-                </div>
-            </div>
-            <iframe class="responsive-iframe" style="height:97%; width:100%" src="https://jspaint.app/"></iframe>
-    
-    
-        </div>
-        
-        <!--MUJIKKK-->
-        <div class="popupWindow" id="musicApp" style="display: none; height: 85%;width: 90%; margin: 5%;">
-            <div class="row">
-                <div class="col col-8">music</div>
-                <div class="col">
-                    <button class="close" aria-label="Close" type="button" onclick="closeMusic()" style="background: red;"></button> 
-                </div>
-            </div>
-            <iframe src="https://open.spotify.com/embed/album/0dDzckGxFn6NLbRtmQRynC" width="100%" height="600" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    
-    
-        </div>
-
-        <!--MY WORK-->
-        <div class="popup" id="myFolder" style="display: none; background-color: #99bbff;">
-            <div class="row">
-                <div class="col col-8">My Work</div>
-                <div class="col">
-                    <button class="close" aria-label="Close" type="button" onclick="closeFolder('myFolder')" style="background: red;"></button> 
-                </div>
-            </div>
-            <!--FOLDER ICONZ-->
-            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4"  style="text-align: center; padding: 20px; margin: 3px; background-color: #d6d6f5;">
-        
-                <div class="col">
-                    <div id="main">
-                        <img onclick="openFolder('myFolder1')" src="https://img.icons8.com/dusk/70/000000/folder-invoices.png"/>
-                        <p>portfolio website</p>
-                    </div>
-                </div>
-        
-                <div class="col"> 
-                    <div id="main">
-                        <img onclick="openSite('https://github.com/tinycoder2/pimbuOS')" src="https://img.icons8.com/dusk/70/000000/source-code.png"/>
-                        <p>this website code</p>
-                    </div>
-                </div>
-        
-            </div>
-            
-        </div>
-        <!--MY FOLDER !-->
-        <div class="popup" id="myFolder1" style="display: none;  background-color: #99bbff;">
-            <div class="row">
-                <div class="col col-8">My Work/portfolio website</div>
-                <div class="col">
-                    <button class="close" aria-label="Close" type="button" onclick="closeFolder('myFolder1')" style="background: red;"></button> 
-                </div>
-            </div>
-            <!--FOLDER ICONZ-->
-            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4"  style="text-align: center; padding: 20px; margin: 3px; background-color: #d6d6f5;">
-        
-                <div class="col">
-                    <div id="main">
-                        <img onclick="openSite('https://tinycoder2.github.io/portfolioSite/')" src="https://img.icons8.com/dusk/70/000000/web.png"/>
-                        <p>website</p>
-                    </div>
-                </div>
-        
-                <div class="col"> 
-                    <div id="main">
-                        <img onclick="openSite('https://github.com/tinycoder2/portfolioSite')" src="https://img.icons8.com/dusk/70/000000/source-code.png"/>
-                        <p>code</p>
-                    </div>
-                </div>
-        
-            </div>
-            
-        </div>
-
-        
-
-
-        <!--Side notifz bar-->
-        <div id="mySidebar" class="sidebar" style="display: none;">
-            <div class="row" style="background-color: #52527a;">
-                <div class="col col-8" style="margin-left: 5px; color: white;"> Messages from author </div>
-                <div class="col">
-                    <button class="close" aria-label="Close" type="button" onclick="closeMessages()" style="background: red;"></button> 
-                </div> 
-            </div>
-            
-            <div class="txtbx" style="text-align: center;">
+        <div class="txtbx" style="text-align: center; overflow-y: auto;">
             <div class="d-grid gap-2" style="margin: 10px;" id="popupMessages">
-                
+
                 <!--notif MESSAGE-->
                 <div class="popupMessage" id="popupMessage1">
                     <div class="row">
                         <div class="col col-8">Message(1)</div>
                         <div class="col">
-                            <button class="close" aria-label="Close" type="button" onclick="closePopUp('popupMessage1')" style="background: red;"></button> 
-                        </div> 
+                            <button class="close" aria-label="Close" type="button" onclick="closePopUp('popupMessage1')" style="background: red;"></button>
+                        </div>
                     </div>
                     <div class="pptxtbox">
                         <p>r u a robot ? </p>
-                        
-                        <div class="row" style="margin: 2px 2px;">
-                            <div class="col" style="text-align: right;"> <button class="button" type="button" style="width: 85%;" onclick="closePopUp('popupMessage1')">no</button> </div>
-                            <div class="col" style="text-align: center;"> <button class="button" type="button" style="width: 85%;" onclick="closePopUp('popupMessage1')">yes</button> </div>
-                            <div class="col" style="text-align: left;"> <button class="button" type="button" style="width: 85%;" onclick="closePopUp('popupMessage1')">01100110</button> </div>    
+
+                        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3" style="margin: 2px 2px;">
+                            <div class="col" style="text-align: right;"> <button class="button" type="button" style="width: 100%;" onclick="closePopUp('popupMessage1')">no</button> </div>
+                            <div class="col" style="text-align: center;"> <button class="button" type="button" style="width: 100%;" onclick="closePopUp('popupMessage1')">yes</button> </div>
+                            <div class="col" style="text-align: left;"> <button class="button" type="button" style="width: 100%;" onclick="closePopUp('popupMessage1')">01100110</button> </div>
                         </div>
                     </div>
                 </div>
@@ -418,15 +415,15 @@
                     <div class="row">
                         <div class="col col-8">Message(2)</div>
                         <div class="col">
-                            <button class="close" aria-label="Close" type="button" onclick="closePopUp('popupMessage2')" style="background: red;"></button> 
-                        </div> 
+                            <button class="close" aria-label="Close" type="button" onclick="closePopUp('popupMessage2')" style="background: red;"></button>
+                        </div>
                     </div>
                     <div class="pptxtbox">
                         <p>get a life 🤡</p>
-                        
-                        <div class="row" style="margin: 2px 2px;">
-                            <div class="col" style="text-align: right;"> <button class="button" type="button" style="width: 65%;" onclick="closePopUp('popupMessage2')">k loser</button> </div>
-                            <div class="col" style="text-align: left;"> <button class="button" type="button" style="width: 65%;" onclick="closePopUp('popupMessage2')">wot is laiF</button> </div>    
+
+                        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2" style="margin: 2px 2px;">
+                            <div class="col" style="text-align: right;"> <button class="button" type="button" style="width: 100%;" onclick="closePopUp('popupMessage2')">k loser</button> </div>
+                            <div class="col" style="text-align: left;"> <button class="button" type="button" style="width: 100%;" onclick="closePopUp('popupMessage2')">wot is laiF</button> </div>
                         </div>
                     </div>
                 </div>
@@ -435,16 +432,16 @@
                     <div class="row">
                         <div class="col col-8">Message(3)</div>
                         <div class="col">
-                            <button class="close" aria-label="Close" type="button" onclick="closePopUp('popupMessage3')" style="background: red;"></button> 
-                        </div> 
+                            <button class="close" aria-label="Close" type="button" onclick="closePopUp('popupMessage3')" style="background: red;"></button>
+                        </div>
                     </div>
                     <div class="pptxtbox">
                         <p>u look cute today</p>
-                        
-                        <div class="row" style="margin: 2px 2px;">
-                            <div class="col" style="text-align: right;"> <button class="button" type="button" style="width: 65%;" onclick="closePopUp('popupMessage3')">idc</button> </div>
-                            <div class="col" style="text-align: center;"> <button class="button" type="button" style="width: 65%;" onclick="closePopUp('popupMessage3')">heck ye</button> </div> 
-                            <div class="col" style="text-align: left;"> <button class="button" type="button" style="width: 65%;" onclick="closePopUp('popupMessage3')">ok</button> </div> 
+
+                        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3" style="margin: 2px 2px;">
+                            <div class="col" style="text-align: right;"> <button class="button" type="button" style="width: 100%;" onclick="closePopUp('popupMessage3')">idc</button> </div>
+                            <div class="col" style="text-align: center;"> <button class="button" type="button" style="width: 100%;" onclick="closePopUp('popupMessage3')">heck ye</button> </div>
+                            <div class="col" style="text-align: left;"> <button class="button" type="button" style="width: 100%;" onclick="closePopUp('popupMessage3')">no u</button> </div>
                         </div>
                     </div>
                 </div>
@@ -453,15 +450,15 @@
                     <div class="row">
                         <div class="col col-8">Reminder</div>
                         <div class="col">
-                            <button class="close" aria-label="Close" type="button" onclick="closePopUp('popupMessage4')" style="background: red;"></button> 
-                        </div> 
+                            <button class="close" aria-label="Close" type="button" onclick="closePopUp('popupMessage4')" style="background: red;"></button>
+                        </div>
                     </div>
                     <div class="pptxtbox">
                         <p>u got this 💖</p>
-                        
-                        <div class="row" style="margin: 2px 2px;">
-                            <div class="col" style="text-align: right;"> <button class="button" type="button" style="width: 65%;" onclick="closePopUp('popupMessage4')">yes</button> </div>
-                            <div class="col" style="text-align: left;"> <button class="button" type="button" style="width: 65%;" onclick="closePopUp('popupMessage4')">yes</button> </div>    
+
+                        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2" style="margin: 2px 2px;">
+                            <div class="col" style="text-align: right;"> <button class="button" type="button" style="width: 100%;" onclick="closePopUp('popupMessage4')">yes</button> </div>
+                            <div class="col" style="text-align: left;"> <button class="button" type="button" style="width: 100%;" onclick="closePopUp('popupMessage4')">yes</button> </div>
                         </div>
                     </div>
                 </div>
@@ -472,26 +469,28 @@
                     <div class="row">
                         <div class="col col-8">Message(4)</div>
                         <div class="col">
-                            <button class="close" aria-label="Close" type="button" href="https://youtu.be/dQw4w9WgXcQ" onclick="closePopUp('popupMessage5')" style="background: red;"></button> 
-                        </div> 
+                            <button class="close" aria-label="Close" type="button" href="https://youtu.be/dQw4w9WgXcQ" onclick="closePopUp('popupMessage5')" style="background: red;"></button>
+                        </div>
                     </div>
                     <div class="pptxtbox">
                         <p>never gonna</p>
-                        
-                        <div class="row" style="margin: 2px 2px;">
-                            <div class="col" style="text-align: right;"> <button class="button" type="button" style="width: 65%;" onclick="surprise()">giv u up</button> </div>
-                            <div class="col" style="text-align: left;"> <button class="button" type="button" style="width: 65%;" onclick="surprise()">let u down</button> </div>    
+
+                        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2" style="margin: 2px 2px;">
+                            <div class="col" style="text-align: right;"> <button class="button" type="button" style="width: 100%;" onclick="surprise()">giv u up</button> </div>
+                            <div class="col" style="text-align: left;"> <button class="button" type="button" style="width: 100%;" onclick="surprise()">let u down</button> </div>
                         </div>
                     </div>
                 </div>
 
             </div>
-            </div>
-
         </div>
 
-    </section>
-    
+    </div>
+
+
+    <!--quik fix forgive me nothing else works im cry
+    <div style="margin-top: 100px;"><p>.</p></div>-->
+
 </body>
 
 

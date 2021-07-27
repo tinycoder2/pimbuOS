@@ -1,109 +1,96 @@
-
-
-nav{
+nav {
     font-family: 'Press Start 2P', cursive;
     color: white;
 }
-body 
-{
-    
-    background-image: url(https://64.media.tumblr.com/010c46067b29b710ce9a508fb4171dfb/tumblr_mqvzu0DpkI1sdgezwo1_400.gifv);
-    background-size:auto;
-    background-repeat:repeat;
-    background-attachment:fixed;
-    background-position:bottom;
-    background-color: #9999e6;
 
+* {
     font-family: 'Press Start 2P', cursive;
     color: #3d3d5c;
-    font-size: 15px;
+}
+
+body {
+    background-image: url(https://64.media.tumblr.com/010c46067b29b710ce9a508fb4171dfb/tumblr_mqvzu0DpkI1sdgezwo1_400.gifv);
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-color: #9999e6;
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
 
-section 
-{
-    margin: 50px 50px 50px 50px;
-    font-family: 'Press Start 2P', cursive;
+.button {
     color: #3d3d5c;
-    font-size: 15px;
 }
 
-.button
-{
-  color: #3d3d5c;
+.button:hover {
+    border: 2px dotted gray;
 }
 
-.button:hover
-{
-  border: 2px dotted gray;
-}
-
-#appRow
-{
-    
+#appRow {
     display: block;
+    margin: 5% 5% 0% 5%;
+}
+
+.popup {
+    background-color: #bb99ff;
+    padding: 5px 2px 0px 5px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-style: double;
+    border-color: #3d3d5c;
+    border-width: 5px;
+    text-align: left;
+}
+
+.popupWindow {
+    background-color: #bb99ff;
+    padding: 5px 2px 0px 5px;
+    margin-left: auto;
+    margin-right: auto;
     margin: 50px;
-}
-
-.popup 
-{
-    background-color: #bb99ff;
-    padding: 5px 2px 0px 5px;
-    margin-left: auto;
-    margin-right: auto;
-    
+    overflow-x: hidden;
+    overflow-y: auto;
     border-style: double;
     border-color: #3d3d5c;
     border-width: 5px;
     text-align: left;
-    max-width: 800px;
-    
 }
 
-.popupWindow 
-{
-    background-color: #bb99ff;
-    padding: 5px 2px 0px 5px;
-    margin-left: auto;
-    margin-right: auto;
-    
-    border-style: double;
-    border-color: #3d3d5c;
-    border-width: 5px;
-    text-align: left;
-    
-    
+.popupWindow.popupFolder {
+    margin: 5%;
 }
 
-#paintApp{
+#paintApp {
     height: 80vh;
     /*margin: 100px 50px 100px 50px;*/
-    
-
 }
 
-#musicApp{
+#musicApp {
     font-family: 'Press Start 2P', cursive;
     color: #3d3d5c;
-    
 }
 
+#subScreen {
+    margin: 1.5rem;
+}
 
-.txtbox 
-{
+.txtbox {
     background-color: #ffccff;
     padding: 10px;
     margin: 5px 5px 5px 0px;
     border-style: solid;
     border-color: pink;
-   
     text-align: center;
 }
 
-.popupMessage
-{
+.popupMessage {
     background-color: #99ffd6;
     padding: 5px 2px 0px 5px;
     margin: 0px 25px 50px 25px;
@@ -112,21 +99,16 @@ section
     border-width: 5px;
     text-align: left;
     display: block;
-    
-    
 }
 
-.pptxtbox 
-{
+.pptxtbox {
     background-color: #e6ffff;
     padding: 10px;
     margin: 5px 5px 5px 0px;
     border-style: solid;
     border-color: #99ffd6;
-   
     text-align: center;
 }
-
 
 .close {
     vertical-align: right;
@@ -137,16 +119,20 @@ section
     height: 20px;
     opacity: 0.6;
 }
-.close:focus
-.close:hover {
+
+.close:focus .close:hover {
     opacity: 1;
     background: red;
     color: white;
 }
+
 .close:active {
     background: red;
 }
+
+
 /* tines of the X */
+
 .close::before,
 .close::after {
     content: " ";
@@ -157,15 +143,16 @@ section
     width: 3px;
     background-color: white;
 }
+
 .close::before {
     transform: translate(-50%, -50%) rotate(45deg);
 }
+
 .close::after {
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-.sidebar
-{
+.sidebar {
     height: 85%;
     width: 90%;
     margin: 5%;
@@ -181,24 +168,37 @@ section
     border-style: double;
     border-color: #3d3d5c;
     border-width: 5px;
-
-    overflow-x: hidden;
-    
-    
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
 }
 
+
 /* Position and style the close button (top right corner) */
+
 .sidebar .closebtn {
     position: absolute;
     top: 50px;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
+}
 
+.message-header {
+    background-color: #52527a;
+    overflow: hidden;
+    position: fixed;
+    padding: 0%;
+    margin: 0%;
+    z-index: 99999;
+    width: 100%;
+}
 
-#myMenu
-{
+.sidebar {
+    padding-top: 0%;
+}
+
+#myMenu {
     height: 0%;
     width: 0%;
     position: fixed;
@@ -207,102 +207,109 @@ section
     left: 0;
     background-color: #4747d1a2;
     overflow: hidden;
-
     transition: 0.5s;
-    
-    
-}
-
-.menuButton{
-  color: #3d3d5c;
-}
-
-#myImage{
-  width:100px;
-  height:100px;
-  border-radius: 50%; 
-  
-  transition: width 2s, height 2s;
- 
-}
-
-#myImage:hover{
-  
-  border: 5px double #9a9add;
-  background-color: #4747d1;
-  opacity: 0.9;
-  
-}
-
-#myImageDiv{
-  margin-top: 10px; 
-  padding: 15px; 
-  text-align: center;
-  
-  
 }
 
 
-#myImagePopUp{
+/* .col.folder{
   
-  height: 500px;
-  width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 1;
-  
-  
+  padding: 5px;
+} */
+
+.ogfolder {
+    text-align: center;
+    padding: 5px;
+    background-color: #d6d6f5;
+    overflow: auto;
+    max-height: 40%;
 }
 
-#aboutMe{
-  
-  min-width: 400px;
-  
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 1;
-  
-  
+.col.folder:not(:last-child) {
+    margin-right: 3px;
 }
 
-#myContact{
-  height: 50%;
-  width: 50%;
-  min-width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 1;
+.menuButton {
+    color: #3d3d5c;
 }
 
-.menuButton{
-  height: 75px;
-  background-color: #9a9add;
-  opacity: 1; 
-
+#myImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: width 2s, height 2s;
 }
-.menuButton:hover{
-  background-color: #9a9add;
-  border: 2px dotted #4747d1;
+
+#myImage:hover {
+    border: 5px double #9a9add;
+    background-color: #4747d1;
+    opacity: 0.9;
 }
-  
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  #main_Sidebar{
-    transition: margin-left .5s; /* If you want a transition effect */
-  }
 
-  #main_Menu{
-    transition: margin-bottom .5s; /* If you want a transition effect */
-  }
-  
-  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-  @media screen and (max-width: 450px) {
-    .sidebar {padding-top: 15px;}
-    .sidebar a {font-size: 18px;}
-  }
+#myImageDiv {
+    margin-top: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+#myImagePopUp {
+    height: 500px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+
+#aboutMe {
+    min-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+
+.folder-text {
+    font-size: 0.7rem;
+}
+
+#myContact {
+    height: 50%;
+    width: 50%;
+    min-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+}
+
+.menuButton {
+    height: 75px;
+    background-color: #9a9add;
+    opacity: 1;
+}
+
+.menuButton:hover {
+    background-color: #9a9add;
+    border: 2px dotted #4747d1;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+    .icon {
+        height: 4rem;
+    }
+    .popupWindow.popupApp {
+        max-height: 90vh;
+    }
+    .popupWindow {
+        max-height: 50vh;
+    }
+}
+
+@media screen and(max-aspect-ratio: 18/9) {
+    .popupWindow {
+        max-height: 25vh;
+    }
+}
 
 
-
-  /*
+/*
   .app {
     background-color:darkgrey;
     border-color: lightgray;
