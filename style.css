@@ -158,10 +158,6 @@ body {
     z-index: 1;
     top: 0;
     right: 0;
-    /*
-    background-image: url('https://i.pinimg.com/originals/dc/7a/d9/dc7ad9f368c6aea89c12805c7d2bf2c3.png') ;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;*/
     background-color: #c2c2d6;
     border-style: double;
     border-color: #3d3d5c;
@@ -170,9 +166,6 @@ body {
     flex-direction: column;
     overflow-y: auto;
 }
-
-
-/* Position and style the close button (top right corner) */
 
 .sidebar .closebtn {
     position: absolute;
@@ -334,14 +327,5 @@ body {
     border-radius: 50%;
     
   }
-  
-  #paint
-  {
-    background-color:#cc00ff;
-    border-color: #e066ff;
-  }
-  
-  #paint:hover{
-      background: #e066ff;
-  }
+
 */
