@@ -1,22 +1,39 @@
+//helper funcx
+function helper(id, x) {
+    if (x == true) {
+        document.getElementById(id).style.display = 'block';
+    } else {
+        document.getElementById(id).style.display = 'none';
+    }
+} //1-blok 0-none
+
+function menuPoof() {
+    var x = document.getElementById("myMenu");
+    x.style.height = "0%";
+    x.style.width = "0%"
+}
+
+
 function openMessages() {
-    document.getElementById("appRow").style.display = 'none';
-    document.getElementById("subScreen").style.display = 'none';
-    document.getElementById("mySidebar").style.display = 'block';
-    document.getElementById("myMenu").style.height = '0%';
+    helper("appRow", 0);
+    helper("subScreen", 0);
+    helper("mySidebar", 1);
+    menuPoof();
 
 
 }
 
 function closeMessages() {
-    document.getElementById("mySidebar").style.display = 'none';
-    document.getElementById("appRow").style.display = 'block';
-    document.getElementById("subScreen").style.display = 'block';
+    helper("mySidebar", 0);
+    helper("appRow", 1);
+    helper("subScreen", 1);
+
 
 }
 
 
 function closePopUp(id) {
-    document.getElementById(id).style.display = 'none';
+    helper(id, 0);
 
 }
 
@@ -34,66 +51,63 @@ function toggleMenu() {
 }
 
 function openPaint() {
-    document.getElementById("appRow").style.display = 'none';
-    document.getElementById("subScreen").style.display = 'none';
-    document.getElementById("paintApp").style.display = 'block';
-    document.getElementById("myMenu").style.height = '0%';
-
+    helper("appRow", 0);
+    helper("subScreen", 0);
+    helper("paintApp", 1);
+    menuPoof();
 }
 
 function closePaint() {
-    document.getElementById("paintApp").style.display = 'none';
-    document.getElementById("appRow").style.display = 'block';
-    document.getElementById("subScreen").style.display = 'block';
+    helper("paintApp", 0);
+    helper("appRow", 1);
+    helper("subScreen", 1);
 
 }
 
 function openMusic() {
-    document.getElementById("appRow").style.display = 'none';
-    document.getElementById("subScreen").style.display = 'none';
-    document.getElementById("musicApp").style.display = 'block';
-    document.getElementById("myMenu").style.height = '0%';
+    helper("appRow", 0);
+    helper("subScreen", 0);
+    helper("musicApp", 1);
+    menuPoof();
 
 }
 
 function closeMusic() {
-    document.getElementById("musicApp").style.display = 'none';
-    document.getElementById("appRow").style.display = 'block';
-    document.getElementById("subScreen").style.display = 'block';
+    helper("musicApp", 0);
+    helper("appRow", 1);
+    helper("subScreen", 1);
 
 }
 
 function openWhatDo() {
-    document.getElementById("popupWhatDo").style.display = 'block';
-    document.getElementById("popupWelcome").style.display = 'none';
+    helper("popupWhatDo", 1);
+    helper("popupWelcome", 0);
 
 }
 
 function openMyPic() {
-    document.getElementById("myImagePopUp").style.display = 'block';
-    document.getElementById("subScreen").style.display = 'none';
-    document.getElementById("myMenu").style.height = '0%';
-
+    helper("myImagePopUp", 1);
+    helper("subScreen", 0);
+    menuPoof();
 }
 
 function openAbout() {
-    document.getElementById("aboutMe").style.display = 'block';
-    document.getElementById("subScreen").style.display = 'none';
-    document.getElementById("myMenu").style.height = '0%';
-
+    helper("aboutMe", 1);
+    helper("subScreen", 0);
+    menuPoof();
 }
 
 function openContact() {
-    document.getElementById("myContact").style.display = 'block';
-    document.getElementById("subScreen").style.display = 'none';
-    document.getElementById("myMenu").style.height = '0%';
+    helper("myContact", 1);
+    helper("subScreen", 0);
+    menuPoof();
 
 }
 
 function openLeave() {
-    document.getElementById("popupLeave").style.display = 'block';
-    document.getElementById("subScreen").style.display = 'none';
-    document.getElementById("myMenu").style.height = '0%';
+    helper("popupLeave", 1);
+    helper("subScreen", 0);
+    menuPoof();
 
 }
 
@@ -103,16 +117,16 @@ function surprise() {
 
 
 function openFolder(id) {
-    document.getElementById("appRow").style.display = 'none';
-    document.getElementById("subScreen").style.display = 'none';
-    document.getElementById(id).style.display = 'block';
-    document.getElementById("myMenu").style.height = '0%';
+    helper(id, 1);
+    helper("appRow", 0);
+    helper("subScreen", 0);
+    menuPoof();
 
 }
 
 function closeFolder(id) {
-    document.getElementById(id).style.display = 'none';
-    document.getElementById("appRow").style.display = 'block';
+    helper(id, 0);
+    helper("appRow", 1);
 
 }
 

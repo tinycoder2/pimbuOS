@@ -52,8 +52,6 @@ body {
 .popupWindow {
     background-color: #bb99ff;
     padding: 5px 2px 0px 5px;
-    margin-left: auto;
-    margin-right: auto;
     margin: 50px;
     overflow-x: hidden;
     overflow-y: auto;
@@ -252,11 +250,8 @@ body {
 }
 
 #myImagePopUp {
-    height: 500px;
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 1;
+    max-width: 400px;
+    max-height: 400px;
 }
 
 #aboutMe {
@@ -271,7 +266,6 @@ body {
 }
 
 #myContact {
-    height: 50%;
     width: 50%;
     min-width: 300px;
     margin-left: auto;
